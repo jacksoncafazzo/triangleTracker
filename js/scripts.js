@@ -1,6 +1,6 @@
 debugger
 var triangleSides = function(sideA, sideB, sideC) {
-  return (sideA === sideB && sideB === sideC);
+  return (sideA === sideB && sideB === sideC) || (sideA === sideB && sideB !== sideC) || (sideA === sideC && sideB !== sideC) || (sideA !== sideB && sideB !== sideC);
 };
 
 //
