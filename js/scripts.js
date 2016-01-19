@@ -7,14 +7,13 @@ var triangleSides = function(sideA, sideB, sideC) {
 };
 
 var isTriangle = function(sideA, sideB, sideC){
-
-  return sideA <= (sideB + sideC) && sideB <= (sideC + sideA) && sideC <=(sideA +sideB)
+  return sideA <= (sideB + sideC) && sideB <= (sideC + sideA) && sideC <=(sideA + sideB)
 }
 
 var triangleType = function(sideA, sideB, sideC){
-  if (sideA === sideB && sideB===sideC) {
+  if (sideA === sideB && sideB === sideC) {
     return "equilateral triangle";
-  } else if (sideA===sideB || sideA===sideC || sideC===sideB) {
+  } else if (sideA === sideB || sideA === sideC || sideC === sideB) {
     return "isosceles triangle";
   } else {
     return "scalene triangle";
@@ -27,10 +26,6 @@ $(document).ready(function() {
     var sideB = parseInt($("input#sideB").val());
     var sideC = parseInt($("input#sideC").val());
     var result = triangleSides(sideA, sideB, sideC);
-
-    sideA = parseInt($("input#sideA").val());
-    sideB = parseInt($("input#sideB").val());
-    sideC = parseInt($("input#sideC").val());
 
     $(".result").text(result);
     $("#result").show();

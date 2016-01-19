@@ -10,19 +10,19 @@ describe('isTriangle', function() {
 
 describe('triangleType', function(){
   it("is Equilateral", function() {
-    expect(triangleType(3, 3, 3)).to.equal('equilateral');
+    expect(triangleType(3, 3, 3)).to.equal('equilateral triangle');
   });
   it("is Isosceles", function() {
-    expect(triangleType(3, 2, 3)).to.equal('isosceles');
+    expect(triangleType(3, 2, 3)).to.equal('isosceles triangle');
   });
   it("is Scalene", function() {
-    expect(triangleType(1, 2, 3)).to.equal('scalene');
+    expect(triangleType(1, 2, 3)).to.equal('scalene triangle');
   });
 });
 
 describe('triangleSides', function() {
   it("is Scalene", function() {
-    expect(triangleSides(1, 2, 3)).to.equal('scalene');
+    expect(triangleSides(1, 2, 3)).to.equal('scalene triangle');
   });
   it("is not triangle", function() {
     expect(triangleSides(4, 1, 2)).to.equal("These sides do not make a triangle.");
